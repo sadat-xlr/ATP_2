@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -135,6 +137,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CartModel.cs" />
+    <Compile Include="Models\DataAccess\Category.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataAccess\Customer.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DataAccess\Halloween.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,7 +158,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Halloween.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataAccess\Invoice.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataAccess\InvoiceData.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataAccess\LineItem.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DataAccess\Product.cs">
+      <DependentUpon>Halloween.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataAccess\State.cs">
       <DependentUpon>Halloween.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OrderModel.cs" />
@@ -253,20 +273,20 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Halloween.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Models\DataAccess\Halloween.edmx.diagram">
+      <DependentUpon>Halloween.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Models\DataAccess\Halloween.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Halloween.edmx</DependentUpon>
       <LastGenOutput>Halloween.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DataAccess\Halloween.edmx.diagram">
-      <DependentUpon>Halloween.edmx</DependentUpon>
     </Content>
     <Content Include="Models\DataAccess\Halloween.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Halloween.edmx</DependentUpon>
       <LastGenOutput>Halloween.cs</LastGenOutput>
     </Content>
-    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\halloween.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

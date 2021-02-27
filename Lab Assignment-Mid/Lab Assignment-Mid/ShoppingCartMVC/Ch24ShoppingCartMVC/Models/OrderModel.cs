@@ -9,12 +9,13 @@ using Ch24ShoppingCartMVC.Models.DataAccess;
 namespace Ch24ShoppingCartMVC.Models {
     public class OrderModel
     {
-        private List<ProductViewModel> products;
+       /* private List<ProductViewModel> products;
         //Implement GetAllProductsFromDataStore
         public List<Product> GetAllProductsFromDataStore()
         {    
-            using (HalloweenEntities data = new HalloweenEntities())
-            {  //get all the products from the Collection Products order by name using HalloweenEntities
+            using (HalloweenContext data = new HalloweenContext())
+            {  //get all the products from the Collection Products order by name using HalloweenEntities=Halloween;
+                
                 return _________________________________________
             }
         }
@@ -25,7 +26,7 @@ namespace Ch24ShoppingCartMVC.Models {
             model.ProductID = product.ProductID;
             model.Name = product.Name;
             //implement other required properties
-            ___________________________________________
+           
             return model;
         }
         //Implement the method GetProductList
@@ -50,27 +51,32 @@ namespace Ch24ShoppingCartMVC.Models {
         
         public Product GetProductByIdFromDataStore(string id)
         {
-            using (HalloweenEntities data = new HalloweenEntities())
+            using (Halloween data = new Halloween())
             {  //Get a product from Products of data where ProductID is matched with id parameter
-                return _________________________________________.FirstOrDefault();
+              
+              
+
+                return new Product();
+                //  return _________________________________________.FirstOrDefault(); this line is provided by sir
             }
         }
         public OrderViewModel GetOrderInfo(string id)
         {
             OrderViewModel order = new OrderViewModel();
             //Call the method GetSelectedProduct and assign the return value to SelectedProduct property
-            _________________________________________________________
+           //****work needed
             return order;
         }  
         public ProductViewModel GetSelectedProduct(string id)
         {
             if (this.products == null)
                 //call the method ConvertToViewModel and pass the method GetProductByIdFromDataStore(id)
-                return ______________________________________
+                
+                return new ProductViewModel();//dummy objct added by me for remoing error--sadat
             else
                 //Get the product from the products where ProductID is matched with id (Using Lambda expression)
-                return ______________________________________________
-        }
+                return new ProductViewModel();//dummy objct added by me for remoing error--sadat
+        }*/
               
         
         

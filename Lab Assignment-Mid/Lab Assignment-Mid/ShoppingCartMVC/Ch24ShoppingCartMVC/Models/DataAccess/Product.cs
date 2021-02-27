@@ -14,6 +14,11 @@ namespace Ch24ShoppingCartMVC.Models.DataAccess
     
     public partial class Product
     {
+        public Product()
+        {
+            this.LineItems = new HashSet<LineItem>();
+        }
+    
         public string ProductID { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
@@ -22,5 +27,7 @@ namespace Ch24ShoppingCartMVC.Models.DataAccess
         public string ImageFile { get; set; }
         public decimal UnitPrice { get; set; }
         public int OnHand { get; set; }
+    
+        public virtual ICollection<LineItem> LineItems { get; set; }
     }
 }

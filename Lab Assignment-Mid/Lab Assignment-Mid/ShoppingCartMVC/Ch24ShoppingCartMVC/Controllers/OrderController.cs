@@ -11,9 +11,15 @@ namespace Ch24ShoppingCartMVC.Controllers {
         private OrderModel order = new OrderModel();
 
         [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+      /* [HttpGet]
         public ActionResult Index(string id) {
             //get list for drop down from temp data called products 
-            SelectList products = (SelectList)T____________________;
+            SelectList products = (SelectList)T_______________;
             if (products == null) {
                 //CALL THE METHOD GetProductList 
                 var list = _________________________________
@@ -45,6 +51,6 @@ namespace Ch24ShoppingCartMVC.Controllers {
             string pID = collection["ddlProducts"];
             //Redirect to the action method index of the Order controller with parameter the id assigned to pID
             ___________________________________________________
-        }      
+        }      */
     }
 }

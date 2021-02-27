@@ -8,21 +8,21 @@ using Ch24ShoppingCartMVC.Models;
 namespace Ch24ShoppingCartMVC.Controllers {
     public class CartController : Controller
     {
-        private CartModel cart = new CartModel();
+        ///private CartModel cart = new CartModel();
 
         [HttpGet]
         public RedirectToRouteResult Index()
         {
             return RedirectToAction("List/");
         }
-        [HttpGet]
+       /* [HttpGet]
         public ViewResult List()
         {
             CartViewModel model = (CartViewModel)TempData["cart"];
             //if the model is null, then call the method GetCart
-           ________________________________
+          //// ________________________________
             //Passing model to View
-            return V___________________________
+          ///  return V___________________________
         }
         [HttpPost]
         public RedirectToRouteResult List(OrderViewModel order)
@@ -35,7 +35,7 @@ namespace Ch24ShoppingCartMVC.Controllers {
             //Assign model to the TempData
             __________________________________________
             return RedirectToAction("List", "Cart");
-        }
+        }*/
        
     }
 }

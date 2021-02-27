@@ -144,3 +144,37 @@ C:\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Razor.xml
 C:\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csprojResolveAssemblyReference.cache
 C:\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.dll
 C:\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.pdb
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csprojAssemblyReference.cache
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CoreCompileInputs.cache
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.dll.config
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.pdb
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Antlr3.Runtime.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\EntityFramework.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Microsoft.Web.Infrastructure.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Newtonsoft.Json.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Net.Http.Formatting.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Http.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Http.WebHost.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Mvc.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Optimization.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Providers.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Razor.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Deployment.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Razor.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\WebGrease.dll
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\EntityFramework.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Newtonsoft.Json.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Net.Http.Formatting.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Http.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Http.WebHost.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Mvc.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.Razor.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Deployment.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Razor.xml
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CopyComplete
+D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.pdb

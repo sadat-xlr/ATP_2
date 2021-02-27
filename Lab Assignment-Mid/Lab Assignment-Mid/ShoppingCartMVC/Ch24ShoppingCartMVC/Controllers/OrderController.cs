@@ -10,13 +10,8 @@ namespace Ch24ShoppingCartMVC.Controllers {
     {
         private OrderModel order = new OrderModel();
 
-        [HttpGet]
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-      /* [HttpGet]
+   
+      [HttpGet]
         public ActionResult Index(string id) {
             //get list for drop down from temp data called products 
             SelectList products = (SelectList)T_______________;
@@ -45,7 +40,7 @@ namespace Ch24ShoppingCartMVC.Controllers {
                 ________________________________
             }
         }
-        [HttpPost] //post back - get selected ddl value and refresh
+       /* [HttpPost] //post back - get selected ddl value and refresh
         public RedirectToRouteResult Index(FormCollection collection)
         {
             string pID = collection["ddlProducts"];

@@ -8,16 +8,18 @@ using Ch24ShoppingCartMVC.Models.DataAccess;
 
 namespace Ch24ShoppingCartMVC.Models {
     public class OrderModel
-    { private List<ProductViewModel> products;
+    {
+        private List<ProductViewModel> products;
         //Implement GetAllProductsFromDataStore
         public List<Product> GetAllProductsFromDataStore()
-        {    
-
+        {
+            List<Product> productList = new List<Product>();
             using (HalloweenContext data = new HalloweenContext())
             {  //get all the products from the Collection Products order by name using HalloweenEntities=Halloween;
-               // var list = from item in data.Products orderby item.Name ascending select item;
-               
-                return data.Products.OrderBy(x => x.Name).ToList() ;
+              productList = data.Products.OrderBy(a => a.Name).ToList();
+
+
+                return productList;
             }
         }
         //Implement the method ConvertToViewModel
@@ -28,6 +30,7 @@ namespace Ch24ShoppingCartMVC.Models {
             model.Name = product.Name;
             model.ImageFile = product.ImageFile;
             model.LongDescription = product.LongDescription;
+            model.ShortDescription = product.ShortDescription;
             model.UnitPrice = product.UnitPrice;
             
             //implement other required properties
@@ -38,18 +41,19 @@ namespace Ch24ShoppingCartMVC.Models {
         public List<ProductViewModel> GetProductsList() {
             if (this.products == null)
                 //Call the method GetAllProducts
-                this.GetAllProducts();
+                this.products=GetAllProducts();
             //Return the products
             return products;
         }
         public List<ProductViewModel> GetAllProducts()
         {
             List<ProductViewModel> productmodels = new List<ProductViewModel>();
-             //Call the GetAllProductsFromDataStore()
-            this.GetAllProductsFromDataStore();
-            foreach (Product p in products)
+            //Call the GetAllProductsFromDataStore()
+            
+           // List<Product> products = GetAllProductsFromDataStore();
+            foreach (Product p in this.GetAllProductsFromDataStore())
             {  //Call the method ConvertToViewModel to convert p and pass the method ConvertToViewModel to the method add of the productmodels
-                this.ConvertToViewModel(p);
+                productmodels.Add(this.ConvertToViewModel(p));
             }
             return productmodels;
         }
@@ -58,30 +62,38 @@ namespace Ch24ShoppingCartMVC.Models {
         {
             using (HalloweenContext data = new HalloweenContext())
             {  //Get a product from Products of data where ProductID is matched with id parameter
-              
-              
 
-                return new Product();
-                //  return _________________________________________.FirstOrDefault(); this line is provided by sir
+
+                return data.Products.Where(p => p.ProductID == id).FirstOrDefault();//study
+
+
+               // return data.Products.Find(id); 
             }
         }
         public OrderViewModel GetOrderInfo(string id)
         {
             OrderViewModel order = new OrderViewModel();
             //Call the method GetSelectedProduct and assign the return value to SelectedProduct property
-           //****work needed
+            order.SelectedProduct = GetSelectedProduct(id);
+            
             return order;
         }  
         public ProductViewModel GetSelectedProduct(string id)
         {
             if (this.products == null)
                 //call the method ConvertToViewModel and pass the method GetProductByIdFromDataStore(id)
-                
-                return new ProductViewModel();//dummy objct added by me for remoing error--sadat
+
+                return ConvertToViewModel(GetProductByIdFromDataStore(id));
             else
-                //Get the product from the products where ProductID is matched with id (Using Lambda expression)
-                return new ProductViewModel();//dummy objct added by me for remoing error--sadat
-        }
+            { //Get the product from the products where ProductID is matched with id (Using Lambda expression)
+               
+                return products.Where(p => p.ProductID == id).FirstOrDefault();
+
+            }
+
+
+                    }
+
               
         
         

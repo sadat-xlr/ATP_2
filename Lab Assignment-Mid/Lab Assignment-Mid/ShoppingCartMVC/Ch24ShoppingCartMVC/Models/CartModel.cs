@@ -18,24 +18,28 @@ namespace Ch24ShoppingCartMVC.Models{
             {   //Create the object cart
                
                 //Assign cart to the Session object cart
-                ____________________________________________
+               
+                
+                ////////CONFUSION HERE
             }
             return cart;
         }
-        private ProductViewModel GetSelectedProduct(string id)
+       private ProductViewModel GetSelectedProduct(string id)
         {   //Create an OrderModel object called order
-            _______________________________
+            OrderModel order = new OrderModel();
             //Call the method GetSelectedProduct of the class OrderModel. Return the object returned by the call.
-            return _____________________________________
+           
+            return order.GetSelectedProduct(id);
         }
         public CartViewModel GetCart(string id = "")
         {
             CartViewModel model = new CartViewModel();
             //Call the method GetCartFromDataStore
-            ____________________________________
+            this.GetCartFromDataStore();
             if (!string.IsNullOrEmpty(id))
                 //Called the method GetSelectedProduct with parameter id and assign the return object to the AddedProduct
-                ____________________________________________
+               this.GetSelectedProduct(id);
+
             return model;
         }
         private void AddItemToDataStore(CartViewModel model)

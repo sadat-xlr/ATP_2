@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,10 +10,10 @@ namespace Ch24ShoppingCartMVC.Models{
         //Data Access methods 
         private List<ProductViewModel> GetCartFromDataStore()
         {
-            List<ProductViewModel> cart;
+            List<ProductViewModel> cart= new List<ProductViewModel>();
             object objCart = HttpContext.Current.Session["cart"];
             //Convert objCart to List<ProductViewModel>
-            ________________________________
+            var listObj = (List<ProductViewModel>)objCart;
             if (cart == null)
             {   //Create the object cart
                
@@ -61,4 +61,4 @@ namespace Ch24ShoppingCartMVC.Models{
                 
        
     }    
-}*/
+}

@@ -50,7 +50,7 @@ namespace Ch24ShoppingCartMVC.Models {
             List<ProductViewModel> productmodels = new List<ProductViewModel>();
             //Call the GetAllProductsFromDataStore()
             
-           // List<Product> products = GetAllProductsFromDataStore();
+           
             foreach (Product p in this.GetAllProductsFromDataStore())
             {  //Call the method ConvertToViewModel to convert p and pass the method ConvertToViewModel to the method add of the productmodels
                 productmodels.Add(this.ConvertToViewModel(p));

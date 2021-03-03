@@ -16,7 +16,7 @@ namespace Ch24ShoppingCartMVC.Models{
             ________________________________
             if (cart == null)
             {   //Create the object cart
-                __________________________________
+               
                 //Assign cart to the Session object cart
                 ____________________________________________
             }

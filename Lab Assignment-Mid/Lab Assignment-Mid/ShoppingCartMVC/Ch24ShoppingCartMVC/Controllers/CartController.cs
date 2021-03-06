@@ -9,23 +9,9 @@ namespace Ch24ShoppingCartMVC.Controllers
 {
     public class CartController : Controller
     {
-        //private CartModel cart = new CartModel();
+        private CartModel cart = new CartModel();
+   
         [HttpGet]
-        public ActionResult List()
-        {
-            return View("List");
-        }
-        [HttpPost]
-        public ActionResult List(int? i)
-
-        {
-            OrderViewModel order = new OrderViewModel();
-            Session["productname"] = order.ProductsList;
-
-
-            return View("List");
-        }
-        /*[HttpGet]
         public RedirectToRouteResult Index()
         {
             return RedirectToAction("List/");
@@ -33,24 +19,33 @@ namespace Ch24ShoppingCartMVC.Controllers
         [HttpGet]
         public ViewResult List()
         {
-            //CartViewModel model = (CartViewModel)TempData["cart"];
+            CartViewModel model = new CartViewModel();
+                model=(CartViewModel)TempData["cart"];
             //if the model is null, then call the method GetCart
-            //// ________________________________
+            if (model == null)
+            { model = cart.GetCart(); 
+            }
+            return View(model);
+            
+           
+
+              
+
             //Passing model to View
-            return View("List");
+
         }
         [HttpPost]
         public RedirectToRouteResult List(OrderViewModel order)
         {
             CartViewModel model = cart.GetCart(order.SelectedProduct.ProductID);
             //Assign the quantity of the selected product to the quantity of the added product
-            ____________________________________________________________
+            
              //Call the method AddtoCart
-             _________________________________
-               //Assign model to the TempData
-               __________________________________________
+             cart.AddToCart(model);
+            //Assign model to the TempData
+            TempData["cart"] = model;
                return RedirectToAction("List", "Cart");
-        }*/
+        }
 
     }
 }

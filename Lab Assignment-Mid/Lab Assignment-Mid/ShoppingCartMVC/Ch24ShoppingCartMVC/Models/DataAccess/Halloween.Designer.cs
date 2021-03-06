@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\Models\DataAccess\Halloween.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\Models\DataAccess\Halloween.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

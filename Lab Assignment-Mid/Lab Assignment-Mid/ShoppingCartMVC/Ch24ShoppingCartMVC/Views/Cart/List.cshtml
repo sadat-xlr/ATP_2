@@ -7,17 +7,20 @@
 }
 <h2>Your Shopping Cart</h2>
 
-@if (Model.Cart==null||Model.Cart.Count()!=0)
+@if (Model.Cart == null || !Model.Cart.Any())
 {
     <p>Nothing in your cart yet.</p>
+  
 }
 else
 {
+    <p>aaaaaaaaaaaaaaa</p>
+    <select multiple="multiple">
+        @foreach (var item in @Model.Cart)
+        {
+            <option>@item.Display()</option>
+        }
+    </select>
 
-<select multiple="multiple">
-    @foreach (var item in @Model.Cart)
-    {
-    <option>@item.Display()</option>
-    }
-</select>
+
 }

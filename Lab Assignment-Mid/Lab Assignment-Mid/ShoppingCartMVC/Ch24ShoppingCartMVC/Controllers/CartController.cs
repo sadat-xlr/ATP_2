@@ -47,6 +47,19 @@ namespace Ch24ShoppingCartMVC.Controllers
             TempData["cart"] = model;
                return RedirectToAction("List", "Cart");
         }
+        [HttpGet]
+        public RedirectToRouteResult Delete(string id)
+        {
+
+             return RedirectToAction("List", "Cart");
+        }
+        [HttpPost, ActionName("Delete")]
+        public ActionResult ConfirmDelete(string id)
+        {
+            cart.Delete(id);
+            return RedirectToAction("List", "Cart");
+        }
+
 
     }
 }

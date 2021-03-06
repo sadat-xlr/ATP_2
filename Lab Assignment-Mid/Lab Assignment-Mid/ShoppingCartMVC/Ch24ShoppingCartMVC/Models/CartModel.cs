@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Ch24ShoppingCartMVC.Models;
+using Ch24ShoppingCartMVC.Models.DataAccess;
 
 namespace Ch24ShoppingCartMVC.Models
 {
@@ -68,6 +69,22 @@ namespace Ch24ShoppingCartMVC.Models
                     inCart.Quantity +=  model.AddedProduct.Quantity;
             }
         }
+        public ProductViewModel Get(string id)
+        {
+            using (HalloweenContext data = new HalloweenContext())
+                return data.Set<ProductViewModel>().Find(id);
+        }
+        public void Delete(string id)
+        {
+            using (HalloweenContext data = new HalloweenContext())
+            {
+                data.Set<ProductViewModel>().Remove(Get(id));
+                data.SaveChanges();
+            }
+            }
+
+
+
 
 
     }

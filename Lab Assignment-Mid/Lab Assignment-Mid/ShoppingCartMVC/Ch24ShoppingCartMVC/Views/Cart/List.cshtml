@@ -15,12 +15,15 @@
 else
 {
     
-    <select multiple="multiple">
-        @foreach (var item in @Model.Cart)
-        {
-            <option>@item.Display()</option>
-        }
-    </select>
+<select multiple="multiple">
+    @foreach (var item in @Model.Cart)
+    {
+        <option>@item.Display()</option>
+    }
+    
+</select>
+<input type="submit" name="Delete" value="Delete">
+   
 
 
 }

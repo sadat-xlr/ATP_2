@@ -12,15 +12,22 @@
     <title>Checkout</title>
 </head>
 <body>
-    <div>
-        <span>Product Name:</span><br><br>
-        <span>Price:</span><br><br>
-        <span>Quantity:</span><br><br>
-        <span>Total Price: </span><br><br>
-        <input type="submit" name="Checkout" value="Check out">
+    <div >
+        @foreach (var item in @Model.Cart)
+        {
 
-
-
+        <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Individual Price</th>
+                <th>Quantity</th>
+                <th>Total Product Price</th>
+            </tr>
+          
+            
+        </table>
+        
+        }
     </div>
 </body>
 </html>

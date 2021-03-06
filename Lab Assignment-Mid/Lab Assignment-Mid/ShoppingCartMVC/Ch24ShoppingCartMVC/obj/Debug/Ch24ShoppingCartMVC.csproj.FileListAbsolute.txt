@@ -178,10 +178,6 @@ D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCa
 D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Razor.xml
 D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CopyComplete
 D:\asp..net\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.pdb
-D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csprojAssemblyReference.cache
-D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CoreCompileInputs.cache
-D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.dll
-D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.pdb
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.dll.config
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.dll
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\Ch24ShoppingCartMVC.pdb
@@ -211,4 +207,8 @@ D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingC
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.xml
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Deployment.xml
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\bin\System.Web.WebPages.Razor.xml
+D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CoreCompileInputs.cache
 D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csproj.CopyComplete
+D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.dll
+D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.pdb
+D:\spring 20-21\ATP-2\Assignment\Lab Assignment-Mid\Lab Assignment-Mid\ShoppingCartMVC\Ch24ShoppingCartMVC\obj\Debug\Ch24ShoppingCartMVC.csprojAssemblyReference.cache

@@ -39,6 +39,7 @@ namespace Ch24ShoppingCartMVC.Controllers
         {
             CartViewModel model = cart.GetCart(order.SelectedProduct.ProductID);
             //Assign the quantity of the selected product to the quantity of the added product
+            model.AddedProduct.Quantity = order.SelectedProduct.Quantity;
             
              //Call the method AddtoCart
              cart.AddToCart(model);

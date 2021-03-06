@@ -22,6 +22,6 @@ namespace Ch24ShoppingCartMVC.Controllers {
             //Pass model to View
             return View(model);
         }
-      
+       
     }
 }

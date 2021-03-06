@@ -1,42 +1,56 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Ch24ShoppingCartMVC.Models;
 
-namespace Ch24ShoppingCartMVC.Controllers {
+namespace Ch24ShoppingCartMVC.Controllers
+{
     public class CartController : Controller
     {
-        private CartModel cart = new CartModel();
-
+        //private CartModel cart = new CartModel();
         [HttpGet]
+        public ActionResult List()
+        {
+            return View("List");
+        }
+        [HttpPost]
+        public ActionResult List(int? i)
+
+        {
+            OrderViewModel order = new OrderViewModel();
+            Session["productname"] = order.ProductsList;
+
+
+            return View("List");
+        }
+        /*[HttpGet]
         public RedirectToRouteResult Index()
         {
             return RedirectToAction("List/");
         }
-       [HttpGet]
+        [HttpGet]
         public ViewResult List()
         {
-            CartViewModel model = (CartViewModel)TempData["cart"];
+            //CartViewModel model = (CartViewModel)TempData["cart"];
             //if the model is null, then call the method GetCart
-          //// ________________________________
+            //// ________________________________
             //Passing model to View
-          ///  return V___________________________
+            return View("List");
         }
         [HttpPost]
         public RedirectToRouteResult List(OrderViewModel order)
         {
             CartViewModel model = cart.GetCart(order.SelectedProduct.ProductID);
             //Assign the quantity of the selected product to the quantity of the added product
-           ____________________________________________________________
-            //Call the method AddtoCart
-            _________________________________
-            //Assign model to the TempData
-            __________________________________________
-            return RedirectToAction("List", "Cart");
-        }
-       
+            ____________________________________________________________
+             //Call the method AddtoCart
+             _________________________________
+               //Assign model to the TempData
+               __________________________________________
+               return RedirectToAction("List", "Cart");
+        }*/
+
     }
 }
-*/

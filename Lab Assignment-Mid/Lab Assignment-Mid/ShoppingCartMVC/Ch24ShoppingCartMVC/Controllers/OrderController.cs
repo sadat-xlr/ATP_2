@@ -39,7 +39,9 @@ namespace Ch24ShoppingCartMVC.Controllers {
                 //Assign products to ProductsList property of model
                 model.ProductsList = products;
                 //Assign the quantity of the SelectProduct of the model to 1
-                model.SelectedProduct.Quantity = 1;
+                
+               
+                    model.SelectedProduct.Quantity = 1;
                 //Send the model object to the view.
                
                     return View(model);

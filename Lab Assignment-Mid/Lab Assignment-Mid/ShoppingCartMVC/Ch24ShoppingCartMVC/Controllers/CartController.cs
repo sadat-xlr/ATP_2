@@ -50,7 +50,9 @@ namespace Ch24ShoppingCartMVC.Controllers
         [HttpGet]
         public RedirectToRouteResult Delete(string id)
         {
+           // cart.GetCart(id).Cart.Remove();
 
+            
              return RedirectToAction("List", "Cart");
         }
         [HttpPost, ActionName("Delete")]

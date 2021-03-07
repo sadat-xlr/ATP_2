@@ -13,7 +13,7 @@ namespace Ch24ShoppingCartMVC.Models {
         public string LongDescription { get; set; } 
         public decimal UnitPrice { get; set; }
         public string ImageFile { get; set; }
-        public int Quantity { get; set; }
+        public uint Quantity { get; set; }
 
         //display item's property values
         public string Display()

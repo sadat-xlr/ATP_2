@@ -16,7 +16,7 @@ namespace Ch24ShoppingCartMVC.Models {
             List<Product> productList = new List<Product>();
             using (HalloweenContext data = new HalloweenContext())
             {  //get all the products from the Collection Products order by name using HalloweenEntities=Halloween;
-               //productList = data.Products.OrderBy(a => a.Name).ToList();
+               
                 productList = data.Products.OrderBy(a => a.Name).ToList();
 
                 return productList;

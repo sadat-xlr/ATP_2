@@ -12,22 +12,40 @@
     <title>Checkout</title>
 </head>
 <body>
-    <div >
-        @foreach (var item in @Model.Cart)
+    <div align="left">
+        @if (Model.Cart == null || Model.Cart.Count == 0)
         {
+            <p><b>Please Add some Items first</b></p>
 
-        <table>
-            <tr>
-                <th>Product Name</th>
-                <th>Individual Price</th>
-                <th>Quantity</th>
-                <th>Total Product Price</th>
-            </tr>
-          
-            
-        </table>
-        
         }
+        else
+        {
+            foreach (var item in @Model.Cart)
+            {
+
+                <table align="center" style="width:100%">
+                    <tr align="center">
+                        <th>Product Name</th>
+                        <th>Individual Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                    </tr>
+                    <tr align="center">
+                        <td>@item.Name</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@item.Quantity</td>
+                        <td>@(@item.Quantity*@item.UnitPrice)</td>
+
+
+
+
+                    </tr>
+
+
+                </table>
+
+            }}
+
     </div>
 </body>
 </html>
